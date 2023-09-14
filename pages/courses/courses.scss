@@ -1,0 +1,112 @@
+.header__courses{
+  background: white;
+}
+
+.online{
+  padding: 80px 0 120px;
+
+  &__subtitle{
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+  }
+  &__title{
+    font-size: 46px;
+    font-weight: 900;
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  &__tabs{
+    list-style-type: none;
+    display: flex;
+    column-gap: 12px;
+    &-tab{
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: 700;
+      color: #9A9CA5;
+      cursor: pointer;
+      transition: 0.5s;
+      &.active{
+        border: 1px solid #FF3F3A;
+        border-radius: 4px;
+        color:#FF3F3A;
+      }
+    }
+    &-tab:hover{
+      color: #FF3F3A;
+      border: 1px solid #FF3F3A;
+      border-radius: 4px ;
+      transition: 0.5s;
+    }
+  }
+  &__input{
+    padding: 11px 16px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid #D7DADD;
+    margin-left: 100px;
+    outline: none;
+  }
+  &__el svg{
+    position: absolute;
+    top: 297px;
+    right: 170px;
+  }
+  &__cards{
+    display: none;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 60px;
+
+  }
+  &__card{
+    width: calc(33.333333% - 30px);
+    border-radius: 4px;
+    border: 1px solid var(--gray-300, #E5E8ED);
+    background: var(--white, #FFF);
+    display: none;
+    box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.03), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 80px 80px -20px rgba(154, 156, 165, 0.08);
+    &.active{
+      display: flex;
+    }
+    &-img{
+      width: 390px;
+      height: 240px;
+    }
+    &-info{
+      padding: 24px ;
+    }
+    &-btn{
+      display: flex;
+      padding: 1px 8px;
+      align-items: center;
+      border-radius: 4px;
+      background: var(--success, #03CEA4);
+      border: none;
+      color: white;
+    }
+    &-title{
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      margin: 20px 0;
+    }
+    &-price {
+      span{
+        font-size: 18px;
+        font-weight: 700;
+        color: #FF4242;
+      }
+      color: #787A80;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+
+    }
+
+  }
+
+}
